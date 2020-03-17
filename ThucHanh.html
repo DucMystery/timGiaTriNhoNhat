@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc Hanh</title>
+</head>
+<body>
+<script>
+    function minArr(array) {
+        if (array.length===0)
+            return -1;
+        let min =array[0];
+        for (let i=0;i<array.length;i++){
+            if (array[i]<min){
+                min = array[i];
+            }
+        }
+        return min;
+    }
+    let arrayInput=[];
+    arrayInput.length=5;
+    for (let i=0;i<arrayInput.length;i++){
+        arrayInput[i]=parseFloat(prompt("Moi nhap vao gia tri:"));
+    }
+    let minInput=minArr(arrayInput);
+    document.write("Gia tri nho nhat cua mang ban vua nhap la : "+minInput);
+</script>
+</body>
+</html>
